@@ -7,9 +7,13 @@ public class PrestamoDto {
 
     private Long id;
 
-    private String name;
+    private String nameGam;
 
-    private String nationality;
+    private String nameCli;
+  
+    private Long fechaPres;
+  
+    private Long fechaDev;
 
     /**
     * @return id
@@ -28,35 +32,51 @@ public class PrestamoDto {
     }
 
     /**
-    * @return name
+    * @return nameGam
     */
-    public String getName() {
+    public String getNameGam() {
 
-        return this.name;
+        return this.nameGam;
     }
 
     /**
-    * @param name new value of {@link #getname}.
+    * @param nameGam new value of {@link #getnameGam}.
     */
-    public void setName(String name) {
+    public void setNameGam(String nameGam) {
 
-        this.name = name;
+        this.nameGam = nameGam;
+    }
+
+  /**
+    * @return nameCli
+    */
+    public String getNameCli() {
+
+        return this.nameCli;
     }
 
     /**
-    * @return nationality
+    * @param nameCli new value of {@link #getnameCli}.
     */
-    public String getNationality() {
+    public void setNameCLi(String nameCli) {
 
-        return this.nationality;
+        this.nameCli = nameCli;
+    }
+  
+    /**
+    * @return fechaPres
+    */
+    public Long getFechaPres() {
+
+        return this.fechaPres;
     }
 
     /**
-    * @param nationality new value of {@link #getnationality}.
+    * @param fechaPres new value of {@link #getfechaPres}.
     */
-    public void setNationality(String nationality) {
+    public void setFechaPres(Long fechaPres) {
 
-        this.nationality = nationality;
+        this.fechaPres = fechaPres;
     }
 
 }
