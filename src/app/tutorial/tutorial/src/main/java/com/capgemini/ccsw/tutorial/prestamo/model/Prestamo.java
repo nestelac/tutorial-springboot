@@ -19,12 +19,18 @@ public class Prestamo {
     @Column(name = "id", nullable = false)
     private Long id;
 
-    @Column(name = "name", nullable = false)
-    private String name;
+    @Column(name = "nameGam", nullable = false)
+    private String nameGame;
 
-    @Column(name = "nationality")
-    private String nationality;
+    @Column(name = "nameCli")
+    private String nameCli;
 
+   @Column(name = "fechaPres", nullable = false)
+    private Long fechaPres;
+
+    @Column(name = "fechaDev")
+    private Long fechaDev;
+    
     /**
     * @return id
     */
@@ -42,35 +48,66 @@ public class Prestamo {
     }
 
     /**
-    * @return name
+    * @return nameGam
     */
-    public String getName() {
+    public String getNameGam() {
 
-        return this.name;
+        return this.nameGam;
     }
 
     /**
-    * @param name new value of {@link #getname}.
+    * @param nameGam new value of {@link #getnameGam}.
     */
-    public void setName(String name) {
+    public void setNameGam(String nameGam) {
 
-        this.name = name;
+        this.nameGam = nameGam;
     }
 
     /**
-    * @return nationality
+    * @return nameCli
     */
-    public String getNationality() {
+    public String getNameCli() {
 
-        return this.nationality;
+        return this.nameCli;
     }
 
     /**
-    * @param nationality new value of {@link #getnationality}.
+    * @param nameCli new value of {@link #getnameCli}.
     */
-    public void setNationality(String nationality) {
+    public void setNameCli(String nameCli) {
 
-        this.nationality = nationality;
+        this.nameCli = nameCli;
+    }
+  
+  /**
+    * @return fechaPres
+    */
+    public Long getFechaPres() {
+
+        return this.fechaPres;
     }
 
+    /**
+    * @param fechaPres new value of {@link #getfechaPres}.
+    */
+    public void setFechaPres(Long fechaPres) {
+
+        this.fechaPres = fechaPres;
+    }
+
+    /**
+    * @return fechaDev
+    */
+    public Long getFechaDev() {
+
+        return this.fechaDev;
+    }
+
+    /**
+    * @param fechaDev new value of {@link #getfechaDev).
+    */
+    public void setFechaDev(Long fechaDev) {
+
+        this.fechaDev = fechaDev;
+    }
 }
