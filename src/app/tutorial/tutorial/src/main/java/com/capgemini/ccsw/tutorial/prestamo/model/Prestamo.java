@@ -30,6 +30,8 @@ public class Prestamo {
 
     @Column(name = "fechaDev")
     private Long fechaDev;
+
+	private String nameGam;
     
     /**
     * @return id
@@ -52,7 +54,7 @@ public class Prestamo {
     */
     public String getNameGam() {
 
-        return this.nameGam;
+        return this.getNameGam();
     }
 
     /**
