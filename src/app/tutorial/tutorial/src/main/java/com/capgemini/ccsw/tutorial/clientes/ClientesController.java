@@ -43,7 +43,7 @@ public class ClientesController {
   * @return
   */
   @RequestMapping(path = { "", "/{id}" }, method = RequestMethod.PUT)
-  public void save(@PathVariable(name = "id", required = false) Long id, @RequestBody CategoryDto dto) {
+  public void save(@PathVariable(name = "id", required = false) Long id, @RequestBody ClientesDto dto) {
 
     this.clientesService.save(id, dto);
   }
